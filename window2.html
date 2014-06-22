@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <!-- Styes -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 id="tabs-examples"><img height="50" width="50" src="img/coin.jpg">Peercoin Tracker</h2>
+        <p>View your D7 pool balance, account information and blocks at a glance.</p>
+        <div class="bs-example bs-example-tabs">
+          <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#user" data-toggle="tab">User</a></li>
+            <li><a href="#worker" data-toggle="tab">Workers</a></li>
+            <li><a href="#pool" data-toggle="tab">Pool</a></li>
+            <li><a href="#blocks" data-toggle="tab">Blocks</a></li>
+            <li><a href="#settings" data-toggle="tab">Settings/About</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="user">
+              <div class="user_output">
+                <!-- Output Area -->
+                <h4 class='no_api'>You can enter your API key on the options page under settings -> extensions and click options for this app.</h4>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="worker">
+              <div class="worker_output">
+                <!-- Output Area -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pool">
+              <div class="pool_output">
+                <!-- Output Area -->
+                <img src="img/d7.png">
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="blocks">
+              <div class="block_output">
+                <!-- Output Area -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="settings">
+              <div class="about_content">
+                  <img src="img/logo.png">
+                  <h3>About Application</h3>
+                  <p>This is a simple application created unnoffcially to work with the D7 PPC mining pool's api to allow you to monitor and track your PPC miners. This application is not affiliated with D7 Mining Pool or Peercoin.</p>
+                  <p>Here are some useful links:</p>
+                  <ul>
+                    <li>This extension was created by: <a class="ext" href="http://cmdann.ca">CMDann.ca</a></li>
+                    <li>Source Code: <a class="ext" href="https://github.com/CMDann/Peercoin-Tracker">GitHub</a></li>
+                    <li>Pool stats by: <a class="ext" href="https://ppcoin.d7.lt">D7 Mining Pool</a></li>
+                    <li>Peercoin site: <a class="ext" href="http://peercoin.net/">Peercoin</a></li>
+                  </ul>
+                </div>
+
+                <div class="support">
+                  <h3>Support</h3>
+                  <p>Donations are not required but are greatly appreciated</p>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="54HXL58ZR6624">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+              <p>Or in PPC/BTC</p>
+              <ul>
+                <li>BTC - 141zjBuPkbzeFHyMY939Q5y7Yu6zEpxnsF</li>
+                <li>PPC - PQnWcKcsm2SBcsPt4Q6YZS5Xz5DsLR1DRj</li>
+              </ul>
+
+                </div>
+
+              <div class="settings">
+                <h3>Settings</h3>
+                <p>Enter your API key on your settings page to allow the application to load your information.</p>
+              <div>
+                <label class="sr-only" for="api_key_input">API Key</label>
+                <input type="text" class="form-control" id="api_key_input" placeholder="Enter API key">
+              </div>
+              <button type="submit" class="btn btn-success api-btn">Save Key</button>
+            </div>
+            </div>
+          </div>
+        </div><!-- /example -->
+    </div>
+  </body>
+
+  <footer>
+    <!-- Scripts -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </footer>
+</html>

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Peercoin Tracker",
+  "description": "Unofficial Peercoin Extension",
+  "version": "2.0",
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "wpt.png", "128": "wpt.jpg" },
+
+  "permissions": [
+    "http://*/",
+    "https://*/",
+    "storage"
+  ]
+}
